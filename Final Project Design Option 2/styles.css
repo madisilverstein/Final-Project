@@ -1,0 +1,165 @@
+
+:root {
+    --primary: #5c866d;
+    --accent: #d7c9a9;
+    --background: #e8f5f5;
+    --dark: #222222;
+    --light: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: var(--background)
+    color: var(--dark);
+}
+
+header {
+    background-color: var(--primary);
+    padding: 1.5rem 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2rem;
+}
+
+h1 a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+h1 a:hover,
+h1 a:focus {
+    color: var(--accent);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--accent);
+}
+
+nav a.active {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.img {
+    width: 100%
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    color: var(--primary);
+}
+
+.content-group {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.content-group img {
+    width: 50%;
+    height: auto;
+}
+
+.content-group div {
+    width: 50%;
+}
+
+.contact-content img {
+    margin: 2rem 0;
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--dark);
+}
+
+fieldset {
+    border: 1px solid var(--dark);
+    padding: 1rem;
+}
+
+legend {
+    font-weight: 600;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid var(--accent);
+}
+
+input:invalid,
+textarea:invalid {
+    border: 2px solid red;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--accent);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
